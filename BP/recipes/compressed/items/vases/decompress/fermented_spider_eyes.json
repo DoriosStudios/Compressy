@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "utilitycraft:vase_of_fermented_spider_eyes_decompressed"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "utilitycraft:vase_of_fermented_spider_eyes"
+			}
+		],
+		"result": {
+			"item": "minecraft:fermented_spider_eye",
+			"count": 9
+		},
+		"unlock": [
+			{
+				"item": "utilitycraft:vase_of_fermented_spider_eyes"
+			}
+		]
+	}
+}

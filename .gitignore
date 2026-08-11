@@ -1,0 +1,8 @@
+Desktop.ini
+.DS_Store
+build/
+builds/
+artifacts/
+.regolith/
+node_modules/
+regolith.tar.gz

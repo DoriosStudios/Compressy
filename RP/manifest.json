@@ -1,0 +1,46 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"product_type": "addon",
+		"authors": [
+			"Dorios Studios"
+		],
+		"url": "https://www.curseforge.com/minecraft-bedrock/addons/compressy"
+	},
+	"header": {
+		"name": "Compressy",
+		"description": "1.0.2 §6Dorios Studios§r\nCompact vanilla blocks and common items.",
+		"min_engine_version": [
+			1,
+			21,
+			120
+		],
+		"uuid": "8766ac5c-a4ba-4b9b-8877-2fe239f5591a",
+		"version": [
+			1,
+			0,
+			2
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "286cb694-96a4-4102-b6d2-e191889553aa",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "baa1a7aa-0431-4321-9999-79514304c427",
+			"version": [
+				1,
+				0,
+				2
+			]
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/unified.json",
+	"type": "minecraftBedrock",
+	"author": "Dorios Studios",
+	"name": "Compressy",
+	"namespace": "utilitycraft",
+	"authors": [
+		"Dorios Studios"
+	],
+	"targetVersion": "1.21.120",
+	"description": "Compress vanilla blocks and common items into compact storage forms.",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": false,
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": false,
+		"educationEdition": false
+	},
+	"bdsProject": true,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Compressy"
+				}
+			]
+		]
+	},
+	"regolith": {
+		"dataPath": "./data",
+		"formatVersion": "1.8.0",
+		"profiles": {
+			"default": {
+				"export": {
+					"build": "standard",
+					"readOnly": false,
+					"target": "development"
+				},
+				"filters": []
+			},
+			"buildDev": {
+				"export": {
+					"bpName": "project.name + ' BP'",
+					"rpName": "project.name + ' RP'",
+					"target": "local"
+				},
+				"filters": []
+			},
+			"buildMinify": {
+				"export": {
+					"bpName": "project.name + ' BP'",
+					"rpName": "project.name + ' RP'",
+					"target": "local"
+				},
+				"filters": []
+			}
+		}
+	}
+}

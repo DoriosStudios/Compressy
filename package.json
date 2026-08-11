@@ -1,0 +1,13 @@
+{
+  "name": "compressy",
+  "version": "1.0.2",
+  "private": true,
+  "description": "Standalone Minecraft Bedrock compression add-on derived from UtilityCraft.",
+  "scripts": {
+    "sync:utilitycraft": "node tools/sync_from_utilitycraft.mjs",
+    "audit": "node tools/audit_compressy.mjs",
+    "test": "npm run audit",
+    "build:dev": "regolith run buildDev",
+    "build:minify": "regolith run buildMinify"
+  }
+}

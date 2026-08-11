@@ -1,0 +1,35 @@
+name: Validate Addon
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Audit standalone content
+        run: npm test
+
+      - name: Install Regolith
+        run: |
+          curl -L https://github.com/Bedrock-OSS/regolith/releases/download/1.8.0/regolith_1.8.0_linux_amd64.tar.gz -o regolith.tar.gz
+          tar -xzf regolith.tar.gz
+          sudo mv regolith /usr/local/bin/regolith
+          regolith --version
+
+      - name: Build development profile
+        run: regolith run buildDev
+
+      - name: Build minified profile
+        run: |
+          rm -rf build
+          regolith run buildMinify

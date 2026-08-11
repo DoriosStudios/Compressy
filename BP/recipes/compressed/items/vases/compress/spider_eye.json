@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "utilitycraft:vase_of_spider_eye"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:spider_eye",
+				"count": 9
+			}
+		],
+		"result": {
+			"item": "utilitycraft:vase_of_spider_eye"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:spider_eye"
+			}
+		]
+	}
+}
