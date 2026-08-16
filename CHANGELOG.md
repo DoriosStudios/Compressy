@@ -1,5 +1,14 @@
 # Compressy v1.0.2
 
+This update rebuilds Compressy as a maintained standalone add-on with the complete vanilla-rooted UtilityCraft compression catalog.
+
+## HIGHLIGHTS
+
+- Added all current UtilityCraft compression chains rooted in vanilla blocks.
+- Added 39 compressed storage items for common vanilla resources.
+- Added reproducible content synchronization and validation tooling.
+- Added automated development, minified, GitHub and CurseForge release support.
+
 ## ADDED
 
 - Added every current UtilityCraft compression chain rooted in a vanilla Minecraft block.

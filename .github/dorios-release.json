@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DoriosStudios/Dorios-Workflows/v1.0.2/releases/schemas/project.schema.json",
+  "schemaVersion": 1,
+  "project": {
+    "name": "Compressy",
+    "slug": "compressy"
+  },
+  "release": {
+    "changelogPath": "CHANGELOG.md",
+    "defaultChannel": "stable",
+    "bedrockManifestPaths": [
+      "BP/manifest.json",
+      "RP/manifest.json"
+    ]
+  },
+  "build": {
+    "enabled": true,
+    "type": "regolith",
+    "developmentProfile": "buildDev",
+    "releaseProfile": "buildMinify",
+    "outputDirectory": "build",
+    "packDirectories": [
+      "Compressy BP",
+      "Compressy RP"
+    ]
+  },
+  "distribution": {
+    "github": true,
+    "curseforge": {
+      "enabled": true,
+      "projectId": 1387104,
+      "gameVersion": "26.30"
+    }
+  },
+  "links": {
+    "website": "https://doriosstudios.com/projects/compressy/",
+    "curseforge": "https://www.curseforge.com/minecraft-bedrock/addons/compressy",
+    "mcpedl": "https://mcpedl.com/compressy/"
+  },
+  "announcement": {
+    "enabled": true,
+    "color": "505030",
+    "imageUrl": "https://doriosstudios.com/img/addons/compressy/MCPEDL.png",
+    "automaticDelayMinutes": 60
+  }
+}
